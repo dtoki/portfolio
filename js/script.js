@@ -47,8 +47,8 @@ $(document).ready(function () {
             $("#mainMenu").attr("class","deactivate");
             setTimeout(dothis,500);
 
-            $("#"+loadCard).addClass("popin");
-            $("#backButton").addClass("popin");
+            $("#"+loadCard).addClass("swing");
+            $("#backButton").addClass("swing");
             matchColor();
         }
         else{
@@ -56,6 +56,10 @@ $(document).ready(function () {
         }
 
     });
+    $(".contactIconsGroup").hover(
+        function(){$(this).addClass('animated  pulse')},
+         function(){$(this).removeClass('animated pulse')}
+    )
     function dothis(){
         $("#backButton").show();
         $("#mainMenu").addClass("display-none");

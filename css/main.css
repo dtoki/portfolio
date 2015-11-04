@@ -6,6 +6,9 @@ body{
      overflow: hidden;
 
 }
+.contactIconsGroup{
+    cursor: pointer;
+}
 .button {
     position: relative;
     background-color: #b11ab1;
@@ -486,6 +489,11 @@ iframe{
     -ms-animation: activate 1.5s ease;
     -o-animation: activate 1.5s ease;
     animation: activate 1.5s ease;
+}
+.pulse {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .deactivate {
