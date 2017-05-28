@@ -16,6 +16,9 @@
             });
         </script>
         <!-- End Google Analytics -->
+
+        <!--Load scripts for acess to my apis using google's api's javascript client -->
+        <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
         
         <meta charset="UTF-8">
         <!--Site Dependencies-->
@@ -55,7 +58,7 @@
                     <div id="contactIcons">
                         <a  href="https://blog.kuelii.com/" class="fade2" target="_blank"><img src="img/icons/medium-seeklogo.com.svg" width=30 alt="Medium icon"></a>
                         <a  href="https://twitter.com/Capt_dt" class="fade2" target="_blank"><img src="img/icons/twitter%20round.svg" width=30 alt="Twitter icon"></a>
-                        <a  href="https://github.com/capdt" class="fade2" target="_blank"><img src="img/icons/github-logo-reverse.svg" width=30 alt="Github icon"></a>
+                        <a  href="https://github.com/dtoki" class="fade2" target="_blank"><img src="img/icons/github-logo-reverse.svg" width=30 alt="Github icon"></a>
                     </div>
                 </div>
             </div>
@@ -174,20 +177,19 @@
                                 </tr>
                                 <tr>
                                     <td class="leftColumn"><span class="glyphicon glyphicon-envelope white"  aria-hidden="true"></span></td>
-                                    <td class="rightColumn">dtoki@sfu.ca, dolapotoki@gmail.com</td>
+                                    <td class="rightColumn">dtoki@sfu.ca</td>
                                 </tr>
                                 <tr class="spacer">
                                     <td></td>
                                     <td></td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td class="leftColumn"><span class="glyphicon glyphicon-phone white" aria-hidden="true"></span></td>
-                                    <td class="rightColumn">778-233-9116</td>
                                 </tr>
                                  <tr class="spacer">
                                      <td></td>
                                     <td></td>
-                                 </tr>
+                                 </tr>-->
                             </table>
                         </div>
                     </div>
@@ -264,14 +266,13 @@
         </main>
         <!--Load script -->
         <script type="text/javascript" src="js/script.js"></script>
-        <!--Load scripts for acess to my apis using google's api's javascript client -->
         <script type="text/javascript" src="js/base.js"></script>
-        <script src="https://apis.google.com/js/client.js?onload=init" async></script>
-        <script type="text/javascript">
+        <!--<script src="https://apis.google.com/js/client.js?onload=init" async></script>-->-->
+        <!--<script type="text/javascript">
             function init() {
                 dplus.website.init('https://' + 'dolapo-websiteapi.appspot.com' + '/_ah/api');
             }
-        </script>
+        </script>-->
         <!--Load bootstraps javascript-->
         <script src="bootstrap/dist/js/bootstrap.js"></script>     
     </body>

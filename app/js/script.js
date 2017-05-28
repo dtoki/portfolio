@@ -1,22 +1,24 @@
 //This checkes what card is clicked ant then loads the corresponding card
 $("#backButton").hide();
 //Global variables
-var socialMediaHrefAdresses=["https://medium.com/dplus","https://twitter.com/Capt_dt","https://github.com/capdt"];
-var projectWebsiteHrefAdresses=["https://kuelii.com/","http://penguinerun.appspot.com/","http://zombie-attack.appspot.com/"];
-var projectGitHrefAdresses=["https://github.com/Capdt/penguinRunDemoRepo","https://github.com/Capdt/zombieAttackDemoRepo"," https://github.com/Capdt/kueliiDemoRepo"];
-var loadCard;
-var colorChange;
-var experiencDataRecieved=false;
-var projectDataRecieved=false;
-var t0,t1;
-var k=0;
-var nullTimes=0;
-var cardClicked;
-var allowRun=false;
-var profileButtonMovement=[];
-var cards=['profileButton','experienceButton','projectWindow','contactButton','educationButton','resumeButton'];
-var browserStack=[];
-var onCards=false;
+const socialMediaHrefAdresses=["https://medium.com/dplus","https://twitter.com/Capt_dt","https://github.com/capdt"];
+const projectWebsiteHrefAdresses=["https://kuelii.com/","http://penguinerun.appspot.com/","http://zombie-attack.appspot.com/"];
+const projectGitHrefAdresses=["https://github.com/Capdt/penguinRunDemoRepo","https://github.com/Capdt/zombieAttackDemoRepo"," https://github.com/Capdt/kueliiDemoRepo"];
+let loadCard;
+let colorChange;
+let experiencDataRecieved=false;
+let projectDataRecieved=false;
+let t0,t1;
+let k=0;
+let nullTimes=0;
+let cardClicked;
+let allowRun=false;
+let profileButtonMovement=[];
+let cards=['profileButton','experienceButton','projectWindow','contactButton','educationButton','resumeButton'];
+let browserStack=[];
+let onCards=false;
+//firebase init
+
 //animation that runs every 12 seconds
 setInterval(function(){
     //get the class on the main menu item
@@ -142,7 +144,7 @@ function enableClickListner(){
         //If the resume tab is clicked then opena new tab with a link to the pdf file        
         else if (cardClicked=="RESUME"){
             loadCard="Null"
-            var win = window.open("https://firebasestorage.googleapis.com/v0/b/dolapo-websiteapi.appspot.com/o/Dolapos%20Resume_2016_final2.pdf?alt=media&token=88436c87-b67d-4d05-8869-21e461cf1c91", '_blank');
+            var win = window.open("https://firebasestorage.googleapis.com/v0/b/dolapo-websiteapi.appspot.com/o/final_resume.pdf?alt=media&token=0b0b8125-45a3-42e1-a237-b7b4504feda0", '_blank');
             win.focus();
         }
         // Animate transition to detailed view.
@@ -237,13 +239,16 @@ function matchColor(){
 }
 //Callback method for creating the project detailed view when the asyncronus call to the api is made
 function myProjectCallBack(message){
-        var output = message.items;
+        //var output = message.items;
+        Object.keys(message).forEach(key =>{
+           createProject(message[key].videoUrl,message[key].name,message[key].description,message[key].technologyUsed,message[key].websiteLink,message[key].gitHubUrl); 
+        });
         //console.log(output.length);
         //Get each project
-        for(i = 0; i < output.length; i++){
-            //console.log(i);
-            createProject(output[i].videoUrl,output[i].projectTitle,output[i].description,output[i].technolgyUsed,output[i].websiteLink,output[i].gitHubUrl);
-        }
+        //for(i = 0; i < output.length; i++){
+            // console.log(i);
+            // createProject(output[i].videoUrl,output[i].projectTitle,output[i].description,output[i].technolgyUsed,output[i].websiteLink,output[i].gitHubUrl);
+        //}
         //Add click listner for the a tags after the projects have been loaded. needs to be done here after the html has been added 
     $("a").click(function(){
         var hrefValue=$(this).attr("href");
@@ -276,10 +281,10 @@ function myProjectCallBack(message){
 }
 //Callback method for creating a experience detailed view when the asyncronus call to the api is made
 function myExperienceCallBack(message){
-        var output = message.items;
-        for(i=0;i<output.length;i++){
-            createExperienceCard(" ",output[i].company,output[i].role,output[i].workDetails);
-        }
+
+        Object.keys(message).forEach(key =>{
+            createExperienceCard("",message[key].name,message[key].role,message[key].workDetails)
+        })
 }
 //Method to generate the the project detailed view and add it to the index.html document
 function createProject(videoUrl,projectTitle,projectDescription,projectTags,projectUrl,projectRepo){
@@ -289,6 +294,7 @@ function createProject(videoUrl,projectTitle,projectDescription,projectTags,proj
     var localTag=[];
     var previousComaLocation=0;
     var currentComaLocation=0;
+ 
     for (var index=0;index<projectTitle.length;index++){
         if(projectTitle[index]!=" "){   
             uid=uid+projectTitle[index];
@@ -301,6 +307,7 @@ function createProject(videoUrl,projectTitle,projectDescription,projectTags,proj
         }
 
     }
+    // console.log(`testStuff ${projectTags}`);
     //Run throug the length of the project tags
     for(j=0;j<=projectTags.length;j++){
         //Search for a coma aymbol
