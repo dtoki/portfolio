@@ -144,7 +144,7 @@ function enableClickListner(){
         //If the resume tab is clicked then opena new tab with a link to the pdf file        
         else if (cardClicked=="RESUME"){
             loadCard="Null"
-            var win = window.open("https://firebasestorage.googleapis.com/v0/b/dolapo-websiteapi.appspot.com/o/final_resume.pdf?alt=media&token=0b0b8125-45a3-42e1-a237-b7b4504feda0", '_blank');
+            var win = window.open("https://firebasestorage.googleapis.com/v0/b/dolapo-websiteapi.appspot.com/o/Resume.pdf?alt=media&token=24ce99a3-9b17-4fa6-b1c7-d7dd5a5263e7", '_blank');
             win.focus();
         }
         // Animate transition to detailed view.
