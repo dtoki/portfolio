@@ -59,7 +59,7 @@ export default {
 <style lang="scss">
 .author {
 	margin: 0 auto;
-	max-width: 860px;
+	max-width: var(--content-width);
 	// text-align: center;
 	padding: calc(var(--space) / 2) 0;
 

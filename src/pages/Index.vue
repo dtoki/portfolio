@@ -6,12 +6,31 @@
     <!-- -->
 
     <!-- List posts -->
+    <h5 class="test_h5">highlighted writings:</h5>
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+    </div>
+
+    <hr class="test_h5">
+
+    <h5 class="test_h5">most recent writings:</h5> 
+    <div class="posts">
+      <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
   </Layout>
 </template>
+
+<style lang="scss" scoped>
+  .test_h5 {
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    font-family: 'Poppins', sans-serif !important;
+  }
+</style>
 
 <page-query>
 query {
@@ -39,11 +58,13 @@ query {
 <script>
 import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
+import PostCardMini from '~/components/PostCardMini.vue'
 
 export default {
   components: {
     Author,
-    PostCard
+    PostCard,
+    PostCardMini
   },
   metaInfo: {
     title: 'Hello, world!'

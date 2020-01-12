@@ -6,8 +6,8 @@
     <!-- -->
     <div>
       <div class="row align-items-center">
-        <h1>Hi, I am DT  👋</h1>
-        <p>A Techie based in Vancouver BC. I'm interested in cloud-native computing, distributed systems and embedded systems engineering. I enjoy working in problem spaces related to scaling and automation tools for developers.</p>
+        <h1>Hi, I am Dolapo 👋</h1>
+        <p>A Software Developer from Vancouver, Canada 🇨🇦. I'm interested in cloud-native computing, distributed systems and embedded systems engineering. I enjoy working in problem spaces related to scaling and automation tools for developers.</p>
         <div style="display: inline-flex;">
           <p>Checkout my <a href="#bottom">resume</a>, visit the <a href="/blog">blog</a>, or say hi to me on <a href="/contact">twitter 🦉</a></p>
           <lottie :options="defaultOptions" :height="400" :width="400" v-on:animCreated="handleAnimation"/>
