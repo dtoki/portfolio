@@ -6,7 +6,6 @@
     <div class="post-card-mini__content">
       <h4 class="post-card-mini__title" v-html="post.title" />
       <!-- <p class="post-card-mini__description" v-html="post.description" /> -->
-
       <PostMeta class="post-card-mini__meta" :post="post" />
       <PostTags class="post-card-mini__tags" :post="post" />
 
@@ -31,7 +30,7 @@ export default {
 <style lang="scss">
 .post-card-mini {
   margin-bottom: var(--space);
-  padding: 20px;
+  padding: var(--card-mini-padding);
   position: relative;
 
   &__header {

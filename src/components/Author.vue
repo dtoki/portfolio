@@ -63,6 +63,10 @@ export default {
 	// text-align: center;
 	padding: calc(var(--space) / 2) 0;
 
+	b{
+		font-family: Lora;
+	}
+
 	&__image {
 		border-radius: 100%;
 		width: 90px;
@@ -72,6 +76,9 @@ export default {
 
 	&__intro {
 		opacity: .8;
+		a {
+			color: var(--gray-dark) !important;
+		}
 	}
 
 	&__site-title {

@@ -8,19 +8,19 @@
       
       <div class="header__right">
         <nav>
-          <a href="/about" class="hvr-hang">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/blog" class="hvr-hang">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/project" class="hvr-hang">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/about" class="hvr-grow">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/blog" class="hvr-grow">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/project" class="hvr-grow">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
           <!-- <a href="/contact" class="hvr-hang">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
         </nav>    
         <ToggleTheme />
       </div>
     </header>
-
-    <main class="main">
-      <slot/>
-    </main>
-
+    <transition name="fade" appear> 
+      <main class="main">
+        <slot/>
+      </main>
+    </transition>
     <footer class="footer">
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
@@ -101,5 +101,13 @@ nav {
     transition-timing-function: ease;
     transition-delay: 0s;
   }  
+}
+// animate page fade in
+.fade-enter-active {
+  transition: opacity 1s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>
