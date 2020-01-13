@@ -15,13 +15,13 @@
 
     <h5 class="test_h5">most recent writings:</h5> 
     <div class="posts">
-      <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
   </Layout>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .test_h5 {
     max-width: var(--content-width);
     margin-left: auto;
@@ -29,6 +29,15 @@
     font-size: 1.1rem;
     color: var(--gray-dark);
     font-family: 'Poppins', sans-serif !important;
+  }
+  nav {
+    a{
+      //Hover Transition property
+      -webkit-transition: all 0.5s ease 0s !important;
+      transition: all 0.5s ease 0s !important;
+      -webkit-transition-property: all !important;
+      transition-property: all !important;
+    }
   }
 </style>
 
