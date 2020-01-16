@@ -1,19 +1,14 @@
 <template>
 	<div class="author">
-
 		<g-image alt="Author image" class="author__image" src="~/assets/images/author2.jpeg" width="180" height="180" blur="5" />
-
-		<div style="display: inline-block; vertical-align:middle; margin-left:15px">
+		<div class="author__container">
 			<h1 v-if="showTitle" class="author__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
-
 		<p class="author__intro">
 			<a href="/about"> Personal Blog by <b>Dolapo Toki</b> </a>
 		</p>
 		</div>	
-		
-
 		<p v-if="showLinks" class="author__links">
 			<a href="//twitter.com/gridsome">twitter</a>
 			<a href="//github.com/gridsome/gridsome-starter-blog">
@@ -65,6 +60,12 @@ export default {
 
 	b{
 		font-family: Lora;
+	}
+
+	&__container {
+		display: inline-block; 
+		vertical-align:middle; 
+		margin-left: var(--card-mini-padding);
 	}
 
 	&__image {

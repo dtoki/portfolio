@@ -2,18 +2,15 @@
   <Layout :show-logo="false">
     <!-- Author intro -->
     <Author :show-title="true" />
-    
-    <!-- -->
-
     <!-- List posts -->
-    <h5 class="test_h5">highlighted writings:</h5>
+    <h5 class="_h5">highlighted writings:</h5>
     <div class="posts">
       <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
-    <hr class="test_h5">
+    <hr class="_h5">
 
-    <h5 class="test_h5">most recent writings:</h5> 
+    <h5 class="_h5">most recent writings:</h5> 
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
@@ -22,13 +19,14 @@
 </template>
 
 <style lang="scss">
-  .test_h5 {
+  ._h5 {
     max-width: var(--content-width);
     margin-left: auto;
     margin-right: auto;
     font-size: 1.1rem;
     color: var(--gray-dark);
     font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 20px;
   }
   nav {
     a{
