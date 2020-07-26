@@ -1,8 +1,11 @@
-# Gridsome Blog Starter
+# Gridsome Medium Theme
 
-> A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content, these theme was built using the [gridsome starter blog](https://github.com/gridsome/gridsome-starter-blog) modified with bootstrap css v4 and inspired by some other themes:
+
+- [Reactgo blog](https://www.gatsbyjs.org/showcase/reactgo.com)
 
 ## Features
+
 - Beautiful and simple design.
 - Markdown for content.
 - Tags support.
@@ -11,11 +14,11 @@
 - 100, 100, 100, 100 score on Google Lighthouse.
 - Uses same front-matter fields as Dev.to.
 
-## Demo URL
+## [Demo URL](https://gridsome-starter-blog.netlify.com)
 
-https://gridsome-starter-blog.netlify.com
+___
 
-## Install
+## Getting Started With Gridsome
 
 ### 1. Install Gridsome CLI tool if you don't have
 
@@ -25,5 +28,26 @@ https://gridsome-starter-blog.netlify.com
 
 1. `gridsome create my-gridsome-site https://github.com/gridsome/gridsome-starter-blog.git`
 2. `cd my-gridsome-site` to open folder
-3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+3. Happy coding 🎉🙌
+
+___
+
+## Developing
+
+### Commands
+
+#### `gridsome develop`
+
+Starts a local dev server accessisble at [localhost](http://localhost:8080)
+
+___
+
+### FAQ?
+
+Running into `node-gyp` build issues?
+
+```shell
+$sudo rm -f $(xcode-select --print-path)     #removes the xcode cli tools path you currently have installed.
+
+$xcode-select --install                      #should force the promt to reinsall CLI tools to appear if it doen't show up automatically.
+```
