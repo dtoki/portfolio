@@ -3,14 +3,14 @@
     <!-- Author intro -->
     <Author :show-title="true" />
     <!-- List posts -->
-    <h5 class="_h5">highlighted writings:</h5>
+    <h6 class="_h5">highlighted writings:</h6>
     <div class="posts">
       <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
     <hr class="_h5">
 
-    <h5 class="_h5">most recent writings:</h5> 
+    <h6 class="_h5">most recent writings:</h6> 
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>

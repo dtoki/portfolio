@@ -3,13 +3,12 @@
 
 @import 'reset';
 @import 'variables';
-@import 'typography';
 @import 'base';
 @import 'code';
 @import 'content-box';
 @import 'utils';
-
 @import 'bootstrap/scss/bootstrap.scss';
+@import 'typography';   //Import last to apply type runes on-top of bootstrap.
 
 // Overide font for headers.
 h1, h2, h3, h4, h5, h6 {
