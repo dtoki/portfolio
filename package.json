@@ -1,23 +1,25 @@
 {
-  "name": "personalwebsite",
-  "version": "1.0.0",
-  "description": "Website",
+  "name": "gridsome-blog",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Capdt/Dolapotokiswebsite.git"
-  },
-  "author": "Dolapo Toki",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Capdt/Dolapotokiswebsite/issues"
-  },
-  "homepage": "https://github.com/Capdt/Dolapotokiswebsite#readme",
   "dependencies": {
-    "browser-sync": "^2.13.0",
-    "connect-history-api-fallback": "^1.2.0",
-    "gulp": "^3.9.1"
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.1",
+    "bootstrap": "^4.4.1",
+    "gridsome": "^0.7.19",
+    "hover.css": "^2.3.2",
+    "jshint": "^2.11.1",
+    "vue-lottie": "^0.2.1"
+  },
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.0"
   }
 }

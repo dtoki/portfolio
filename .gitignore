@@ -1,7 +1,8 @@
-/.ftpsync_settings
-
-#Folders to remove
+*.log
+.cache
+.DS_Store
+src/.temp
 node_modules
-*.jar
-*.firebaserc
-
+dist
+.env
+.env.*
