@@ -15,7 +15,7 @@ A simple, hackable & minimalistic starter for Gridsome that uses Markdown for co
 - 100, 100, 100, 100 score on Google Lighthouse.
 - Uses same front-matter fields as Dev.to.
 
-<!-- ## [Demo URL]() -->
+### [Demo URL](https://portfolio-git-master.dtoki.vercel.app)
 
 ___
 
