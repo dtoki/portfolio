@@ -1,8 +1,9 @@
-# Gridsome Medium Theme
+# Gridsome Clean Snow blog theme.
 
 A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content, these theme was built using the [gridsome starter blog](https://github.com/gridsome/gridsome-starter-blog) modified with bootstrap css v4 and inspired by some other themes:
 
 - [Reactgo blog](https://www.gatsbyjs.org/showcase/reactgo.com)
+- [Gridsome starter blog](https://gridsome-starter-blog.netlify.com)
 
 ## Features
 
@@ -14,7 +15,7 @@ A simple, hackable & minimalistic starter for Gridsome that uses Markdown for co
 - 100, 100, 100, 100 score on Google Lighthouse.
 - Uses same front-matter fields as Dev.to.
 
-## [Demo URL](https://gridsome-starter-blog.netlify.com)
+<!-- ## [Demo URL]() -->
 
 ___
 

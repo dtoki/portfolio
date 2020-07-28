@@ -22,8 +22,6 @@ export default {
     },
     data() {
       return {
-        defaultOptions: {animationData: animationData.default},
-        animationSpeed: 1
       }
     },
     methods: {
