@@ -3,17 +3,17 @@
     <!-- Author intro -->
     <Author :show-title="true" />
     <!-- List posts -->
-    <h6 class="_h5">highlighted writings:</h6>
+    <!-- <h6 class="_h5">writings:</h6> -->
     <div class="posts">
       <PostCardMini v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
-    <hr class="_h5">
+    <!-- <hr class="_h5">
 
     <h6 class="_h5">most recent writings:</h6> 
     <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
+    </div> -->
 
   </Layout>
 </template>

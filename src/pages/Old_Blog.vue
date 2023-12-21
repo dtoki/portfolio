@@ -5,11 +5,11 @@
     
     <div class="container">
       <div class="row align-items-center">
-        <h1>Projects 🚀</h1>
+        <h1>Blog 📖</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis venenatis risus, ut maximus felis rhoncus ut. Ut nec porttitor augue. Curabitur rutrum sollicitudin metus, nec sollicitudin diam consectetur in. Quisque aliquet justo magna. Pellentesque in enim enim.</p>
       </div>
     </div>
-  
+
   </BlankLayout>
 </template>
 
@@ -51,6 +51,6 @@ export default {
 <style lang="scss">
 h1{
   font-family: Lora;
-  width:100%;
+  width: 100%;
 }
 </style>

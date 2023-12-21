@@ -7,9 +7,9 @@
 
       <div class="header__right">
         <nav>
-          <a href="/about" class="hvr-grow">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/blog" class="hvr-grow">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/project" class="hvr-grow">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/about" class="hvr-grow">about</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/blog" class="hvr-grow">blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <a href="/project" class="hvr-grow">projects</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
           <!-- <a href="/contact" class="hvr-hang">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
         </nav>
         <ToggleTheme />
