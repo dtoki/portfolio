@@ -56,3 +56,6 @@ $xcode-select --install                      #should force the promt to reinsall
 Add static files in the static folder. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at https://yoursite.com/robots.txt.
 
 This file should be deleted.
+
+if you are going to use node > 16 for development; you have to use the following command to use the legacy ssl for node.
+export NODE_OPTIONS=--openssl-legacy-provider
