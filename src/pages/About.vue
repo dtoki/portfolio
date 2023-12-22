@@ -32,7 +32,7 @@
 
 <script>
 import Lottie from 'vue-lottie';
-import * as animationData from '../assets/anim/monkey-dance.json'
+import * as animationData from '../assets/anim/hover-black.json'
 
 export default {
   name: 'app',
