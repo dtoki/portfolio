@@ -10,7 +10,7 @@ module.exports = {
   siteDescription: 'personal blog and portfolio of 0xdt',
   icon: './src/assets/images/favicon.png',
   templates: {
-    Post: '/:title',
+    Post: '/blog/:title',
     Tag: '/tag/:id'
   },
 
@@ -27,6 +27,32 @@ module.exports = {
             typeName: 'Tag',
             create: true
           }
+        }
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        // Exclude specific paths from the sitemap
+        exclude: ['/project', '/blog/a-post-with-a-cover-image', '/a-post-with-a-cover-image', '/assets/*', '/old-blog', '/old-blog/*', '/tag/*'],
+        // Add custom entries
+        config: {
+          '/about': {
+            changefreq: 'monthly',
+            priority: 0.7
+          },
+          '/blog': {
+            changefreq: 'daily',
+            priority: 0.9
+          },
+          '/blog/*': {
+            changefreq: 'daily',
+            priority: 0.9
+          },
+          '/': {
+            changefreq: 'daily',
+            priority: 0.9
+          },
         }
       }
     }
