@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: '0xdt',
-  siteDescription: 'personal Blog and Portfolio of 0xdt',
+  siteDescription: 'personal blog and portfolio of 0xdt',
 
   templates: {
     Post: '/:title',

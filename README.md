@@ -52,3 +52,7 @@ $sudo rm -f $(xcode-select --print-path)     #removes the xcode cli tools path y
 
 $xcode-select --install                      #should force the promt to reinsall CLI tools to appear if it doen't show up automatically.
 ```
+
+Add static files in the static folder. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at https://yoursite.com/robots.txt.
+
+This file should be deleted.

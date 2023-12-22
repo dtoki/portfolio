@@ -5,6 +5,7 @@ tags: ['GCP', 'Terrafrom', 'IAC', 'Guide']
 canonical_url: false
 series: true
 published: true
+# cover_image: none
 description: "A step-by-step guide to set up Terraform to work with a GCP project using Cloud Storage as a backend"
 ---
 
