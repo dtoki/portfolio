@@ -6,7 +6,7 @@
 			{{ $static.metadata.siteName }}
 		</h1>
 		<p class="author__intro">
-			<a href="/about"> personal Blog by <b>0xdt</b> </a>
+			<a > personal Blog by <b>0xdt</b> </a>
 		</p>
 		</div>	
 		<p v-if="showLinks" class="author__links">
