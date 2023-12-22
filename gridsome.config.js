@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: '0xdt',
+  siteName: '0xdt.',
   siteUrl: 'https://dtoki.io',
   siteDescription: 'personal blog and portfolio of 0xdt',
   icon: './src/assets/images/favicon.png',

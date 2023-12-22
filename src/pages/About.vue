@@ -6,11 +6,11 @@
     <!-- -->
     <div class="container">
       <div class="row align-items-center">
-        <h1>hi there 👋🏽, i'm Oxdt</h1>
+        <h1>hi there 👋🏽, i'm Oxdt.</h1>
         <p>a software / site reliability engineer from vancouver, canada 🇨🇦.</p>
         <p>i currently work in the cloud native computing space, specializing in distributed systems and production
           operations. i enjoy building tools for developers.</p>
-        <p>I also occasionally dabble with micro controllers.</p>
+        <p>i also occasionally dabble with micro controllers.</p>
         <div style="display: inline-flex;">
           <p>visit my <a href="/blog">blog</a>, say hi on <a href="http://x.com/0xdtoki" target="_blank">x</a></p>
         </div>
