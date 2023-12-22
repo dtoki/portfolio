@@ -2,9 +2,9 @@
   "name": "gridsome-blog",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "build": "npx gridsome build",
+    "develop": "npx gridsome develop",
+    "explore": "npx gridsome explore"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.1",
