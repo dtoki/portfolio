@@ -11,15 +11,15 @@
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.1",
-    "bootstrap": "^4.4.1",
-    "gridsome": "^0.7.19",
+    "bootstrap": "^5.3.2",
+    "gridsome": "^0.7.23",
     "hover.css": "^2.3.2",
     "jshint": "^2.11.1",
     "vue-lottie": "^0.2.1"
   },
   "devDependencies": {
     "compass": "^0.1.1",
-    "node-sass": "^4.14.1",
+    "sass": "^1.69.5",
     "sass-loader": "^8.0.0"
   }
 }
