@@ -75,7 +75,7 @@ export default {
         PostCardMini
     },
     metaInfo: {
-        title: 'Hello, world!'
+        title: '👋🏽'
     }
 }
 </script>

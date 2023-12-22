@@ -45,6 +45,9 @@ export default {
       animationSpeed: 1
     }
   },
+  metaInfo : {
+    title: 'about'
+  },
   methods: {
     handleAnimation: function (anim) {
       this.anim = anim;

@@ -6,8 +6,9 @@
 
 module.exports = {
   siteName: '0xdt',
+  siteUrl: 'https://dtoki.io',
   siteDescription: 'personal blog and portfolio of 0xdt',
-
+  icon: './src/assets/images/favicon.png',
   templates: {
     Post: '/:title',
     Tag: '/tag/:id'
